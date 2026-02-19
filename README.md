@@ -37,12 +37,15 @@ Gemini CLI が Node を必要としていて、インストール先に悩んだ
         ├── ⭕️ .toolkit
         │   ├── README.md
         │   ├── init.zsh    # sh-scripts 内の各モジュールをロード
+        │   ├── llm-context/ # LLM に渡すためのグローバルコンテキスト
+        │   │   └── GEMINI.md
         │   ├── nodetools-22/ # 隔離環境
         │   │   ├── .node-version # バージョン固定
         │   │   └── node_modules/.bin/
         │   │       └── gemini # ← 隔離環境内で実行される実体バイナリ
         │   └── sh-scripts/ # 各種ガードレール・自動化スクリプト
         │       ├── aliases.zsh          # 隔離環境でのバイナリ叩き・短縮設定
+        │       ├── claude-session.zsh   # Claude セッションの自動開始
         │       ├── node-provisioner.zsh # cd 時に Node/pnpm を自動切替
         │       ├── brew-node-guard.zsh  # brew への Node 混入を防ぐガード
         │       └── terminal-ui.zsh      # Git詳細ステータスUI

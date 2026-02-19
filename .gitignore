@@ -1,0 +1,10 @@
+# 依存関係
+node_modules/
+
+# OS固有ファイル
+.DS_Store
+
+# ログファイル
+*.log
+npm-debug.log*
+pnpm-debug.log*

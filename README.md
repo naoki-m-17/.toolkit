@@ -8,7 +8,9 @@ Gemini CLI が Node を必要としていて、インストール先に悩んだ
 
 - **`brew install gemini-cli`**: brew内に自動でnodeが生成され、fnmと干渉しそう
 - **（fnm配下の各nodeバージョンへ） `npm install -g gemini-cli`**: ツールのインストールがバージョン間で重複するし、どれに何入れたか迷子になりそう
-- **プロジェクトごとにインストール**: さすがにめんどくさい
+- **プロジェクトごとにインストール**: package.jsonに差分が出るし、さすがにめんどくさい
+
+## 今回の解決方法
 
 `gemini` コマンドを叩くと、
 
@@ -32,7 +34,7 @@ Gemini CLI が Node を必要としていて、インストール先に悩んだ
     │   └── pnpm/           # パッケージ管理層（pnpm 実体・グローバルストア）
     └── src/
         │
-        ├── ⭕️ **[.toolkit]**
+        ├── ⭕️ .toolkit
         │   ├── README.md
         │   ├── init.zsh    # sh-scripts 内の各モジュールをロード
         │   ├── nodetools-22/ # 隔離環境

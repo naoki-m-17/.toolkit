@@ -15,7 +15,7 @@ alias gemini='(){
     local PROJECT_PATH="$PWD"
     trap "cd $PROJECT_PATH" EXIT INT
     cd ~/src/.toolkit/nodetools-22 || return
-    fnm exec -- sh -c "cd $PROJECT_PATH && ~/src/.toolkit/nodetools-22/node_modules/.bin/gemini"
+    fnm exec -- sh -c "cd $PROJECT_PATH && ~/src/.toolkit/nodetools-22/node_modules/.bin/gemini --include-directories ~/src/.toolkit/llm-context"
 }'
 
 

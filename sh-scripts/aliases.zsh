@@ -39,3 +39,5 @@ alias firebase='npx firebase-tools'
 # ==========================================
 
 alias p='pnpm'
+# cd（.） を維持しつつ、~/src 配下のプロジェクトへ直アクセス可能にする
+export CDPATH=".:$HOME/src"

@@ -39,5 +39,10 @@ alias firebase='npx firebase-tools'
 # ==========================================
 
 alias p='pnpm'
+alias cdcd='cd ~/src'
+alias main='git switch main'
+alias dev='git switch develop'
+alias f='git fetch'
+alias pull='git pull'
 # cd（.） を維持しつつ、~/src 配下のプロジェクトへ直アクセス可能にする
 export CDPATH=".:$HOME/src"
